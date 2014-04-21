@@ -1,0 +1,6 @@
+*.pyc
+*.txt
+hosts
+*.idea
+*.iml
+target

@@ -1,0 +1,8 @@
+# launch a cluster with five clients and five hosts in us-west with ec2 tag 'example'
+python setup_hosts.py --color -c us-west-2 -nc 5 -ns 5 --launch --tag example
+
+# run experiment 'varythreads' on 'example' cluster
+python setup_hosts.py --color -c us-west-2 -nc 5 -ns 5 --experiment varythreads --tag example
+
+# terminate
+python setup_hosts.py --color -c us-west-2 -nc 5 -ns 5 --terminate --tag example

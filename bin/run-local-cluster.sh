@@ -1,0 +1,3 @@
+java -ea -Djava.library.path=/usr/local/lib -Dlog4j.configuration=file:target/classes/log4j.properties -jar target/kaiju-1.0-SNAPSHOT.jar -kaiju_port 8081 -id 0 -cluster 127.0.0.1:8081,127.0.0.1:8082,127.0.0.1:8083  &
+java -ea -Djava.library.path=/usr/local/lib -Dlog4j.configuration=file:target/classes/log4j.properties -jar target/kaiju-1.0-SNAPSHOT.jar -kaiju_port 8082 -id 1 -cluster 127.0.0.1:8081,127.0.0.1:8082,127.0.0.1:8083 -thrift_port 9002  &
+java -ea -Djava.library.path=/usr/local/lib -Dlog4j.configuration=file:target/classes/log4j.properties -jar target/kaiju-1.0-SNAPSHOT.jar -kaiju_port 8083 -id 2 -cluster 127.0.0.1:8081,127.0.0.1:8082,127.0.0.1:8083 -thrift_port 9003  &

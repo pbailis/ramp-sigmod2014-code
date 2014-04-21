@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=../../target/kaiju-1.0-SNAPSHOT.jar -DgroupId=edu.berkeley.kaiju -DartifactId=kaiju -Dversion=1.0-SNAPSHOT -Dpackaging=jar
